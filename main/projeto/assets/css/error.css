@@ -1,0 +1,27 @@
+#headerMenuCollapse {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.error-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.error-content img {
+    border-radius: 5px;
+}
+
+.error-content .button-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background: #fff;
+    border-radius: 5px;
+    color: #000;
+}
