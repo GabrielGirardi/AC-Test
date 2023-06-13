@@ -42,7 +42,7 @@
                         <a href="index.php" class="nav-link"><i class="fe fe-home"></i> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="produtos.php" class="nav-link active"><i class="fe fe-package"></i> Produtos</a>
+                        <a href="produtos.php" class="nav-link"><i class="fe fe-package"></i> Produtos</a>
                     </li>
                     <li class="nav-item">
                         <a href="form-venda.php" class="nav-link"><i class="fe fe-dollar-sign"></i> Venda</a>

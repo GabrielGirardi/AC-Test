@@ -14,7 +14,6 @@
     <meta name="MobileOptimized" content="320">
     <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-    <!-- Generated: 2018-04-16 09:29:05 +0200 -->
     <title>Novo produto</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
@@ -32,11 +31,11 @@
                 <div class="card-body">
                   <h3 class="card-title">Novo produto</h3>
                   <div class="row">
-		            <div class="col-md-12">
-                      <div class="form-group">
-                        <label class="form-label">Descrição</label>
-                        <input type="text" class="form-control" name="nome" placeholder="Arroz..">
-		              </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="form-label">Descrição</label>
+                          <input type="text" class="form-control" name="nome" placeholder="Arroz..">
+                    </div>
                     </div>
                     <div class="col-sm-6 col-md-4">
                       <div class="form-group">
