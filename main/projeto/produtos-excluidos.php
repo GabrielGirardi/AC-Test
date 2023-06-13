@@ -14,8 +14,14 @@
     <meta name="MobileOptimized" content="320">
     <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-    <!-- Generated: 2018-04-16 09:29:05 +0200 -->
-    <title>Produtos</title>
+    <script src="./assets/js/tabs.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+    <script src="./assets/js/tabs.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <title>Lixeira</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
     <?php include_once './partials/scripts.php'; ?>
@@ -51,8 +57,9 @@
                             $productName = json_encode($product['name']);
                             $productPrice = number_format($product['price'], 2, ',', '.');
                             $productAmount = json_decode($product['amount'], true);
+                            $productActive = json_decode($product['active']);
 
-                            if($productAmount <= 0) {
+                            if($productAmount <= 0 || $productActive == 0) {
                                 echo '<tr>';
                                 echo '<td><span class="text-muted">' . $counter . '</span></td>';
                                 echo '<td>' . json_decode($productName, true) . '</td>';

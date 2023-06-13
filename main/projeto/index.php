@@ -14,8 +14,7 @@
     <meta name="MobileOptimized" content="320">
     <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-    <!-- Generated: 2018-04-16 09:29:05 +0200 -->
-    <title>Homepage - tabler.github.io - a responsive, flat and full featured admin template</title>
+    <title>Home</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
     <?php include_once './partials/scripts.php'; ?>
@@ -35,15 +34,34 @@
               <div class="col-6 col-sm-4 col-lg-2">
                 <div class="card">
                   <div class="card-body p-3 text-center">                    
-                    <div class="h1 m-0"><?php echo count($products) ?></div>
+                    <div class="h1 m-0">
+                      <?php 
+                      if(count($products) > 0){
+                        echo count($products);
+                      } else {
+                        echo 0;
+                      }
+                      ?>
+                    </div>
                     <div class="text-muted mb-4">Produtos</div>
                   </div>
                 </div>
               </div>
-	        <div class="col-6 col-sm-4 col-lg-2">
+	            <div class="col-6 col-sm-4 col-lg-2">
                 <div class="card">
                   <div class="card-body p-3 text-center">                    
-                    <div class="h1 m-0">1</div>
+                    <div class="h1 m-0">
+                      <?php
+                       $counter = 0;
+                        foreach ($products as $product) {
+                          if ($product['last_sell'] != null) {
+                            $counter++;
+                          }
+                        }
+
+                        echo $counter;
+                      ?>
+                    </div>
                     <div class="text-muted mb-4">Venda</div>
                   </div>
                 </div>

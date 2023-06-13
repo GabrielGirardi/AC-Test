@@ -14,7 +14,6 @@
     <meta name="MobileOptimized" content="320">
     <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-    <!-- Generated: 2018-04-16 09:29:05 +0200 -->
     <title>Venda</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
@@ -28,11 +27,11 @@
           <div class="container">
             <div class="row">              
             <div class="col-lg-12">
-              <form class="card" action="./form-venda.php" method="POST">
+              <form class="card" action="./partials/sell.php" method="POST">
                 <div class="card-body">
                   <h3 class="card-title">Realizar venda de um produto</h3>
                   <div class="row">
-		    <div class="col-md-12">
+		                <div class="col-md-12">
                       <div class="form-group">
                         <label class="form-label">Produto</label>
                         <select class="form-control custom-select">
@@ -90,7 +89,7 @@
                             <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
                             <span class="custom-control-label">Atualizar valor unitário do produto</span>
                           </label>
-			</div>
+			                  </div>
                       </div>
                     </div>                    
                   </div>
